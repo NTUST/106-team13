@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>第13組</title>
+<meta charset="utf-8">
+<style>
+.name {
+   float: left;
+   margin: 15px;
+   padding: 20px;
+   width: 300px;
+   height: 300px;
+   border: 3px solid black;
+}
+table, th, td {
+	font-family:arial,sans-serif;
+	border: 1px solid black;
+ 	border-collapse:collapse;
+}
+body {
+    background-color: white;
+}
+h1 {
+    color: black;
+}
+p {
+    color: black;
+}
+</style>
+</head>
+<body>
+
+<h1>#13 Responsive Web Design</h1>
+<div class="name">
+	<h2>#13 Self Introduction</h2>
+	<p>網頁製作 第13組 自我介紹</p>
+	<p>網頁製作 第13組 自我介紹</p>
+	<p>網頁製作 第13組 自我介紹</p>
+	<p>網頁製作 第13組 自我介紹</p>
+	<p>網頁製作 第13組 自我介紹</p>
+</div>
+
+<div class="name">
+  <h2>朱鍇</h2>
+  <p>四管理二</p>
+  <p>B10433020</p>
+  <table>
+	<tr>
+		<th>願望一</th>
+		<th>願望二</th>
+		<th>願望三</th>
+	</tr>
+	<tr>
+		<td>畢業</td>
+		<td>High Pass</td>
+		<td>豪</td>
+	</tr>
+</table>
+</div>
+
+<div></div>
+<div></div>
+<div></div>
+
+</body>
+</html>
