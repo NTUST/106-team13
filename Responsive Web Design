@@ -60,7 +60,32 @@ p {
 
 <div></div>
 <div></div>
-<div></div>
+<div class="name">
+  <h2>游堯升</h2>
+<p>My bobby:</p> 
+<ul>
+  <li>Japanese idol</li>
+  <li>Football</li>
+  <li>Eating</li>
+</ul>  
+
+<table style="width:100%">
+<p>Selfintro:</p>
+  <tr>
+    <th>願望一</th>
+    <th>願望二</th> 
+    <th>願望三</th>
+  </tr>
+  <tr>
+    <td>變有錢</td>
+    <td></td>
+    <td>a</td>
+  </tr>
+</table>
+<br>
+
+  
+</div>
 
 </body>
 </html>
