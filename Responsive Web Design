@@ -58,7 +58,6 @@ p {
 </table>
 </div>
 
-<div></div>
 <div class="name">
   <h2>蕭文惠</h2>
   <p>四管理二</p>
@@ -75,7 +74,8 @@ p {
 		<td>然後成功有點能力了</td>
 	</tr>
 </table>
-<div></div>
+</div>
+
 <div class="name">
   <h2>游堯升</h2>
 <p>My bobby:</p> 
