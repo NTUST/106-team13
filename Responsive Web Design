@@ -59,7 +59,36 @@ p {
 </div>
 
 <div></div>
-<div></div>
+<div class="name">
+  <h2>林榮葦</h2>
+  <p>我是林榮葦哈哈哈哈哈哈哈哈，大家好。</p>
+  <ul style="list-style-type:square">
+  <li>興趣:彈吉他</li>
+  <li>嗜好:聽音樂</li>
+  <li>嗜好:吃好吃的東西</li>
+</ul>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+</style>
+<table style="width:100%">
+  <tr>
+    <th>願望一</th>
+    <th>願望二</th> 
+    <th>country</th>
+  </tr>
+  <tr>
+    <td>哈哈</td>
+    <td>ㄎㄎ</td>
+    <td>台灣</td>
+  </tr>
+</table>
+</div>
 <div></div>
 
 </body>
