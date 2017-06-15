@@ -1,0 +1,412 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0185)file:///C:/Users/Calvin%20Kei/Desktop/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E6%96%B0%E5%A2%9E%E8%B3%87%E6%96%99%E5%A4%BE/Creative%20Tim%20_%20Tools%20to%20build%20better%20websites.html -->
+<html lang="en" class=" js no-touch js no-touch">
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <meta name="viewport" content="width=device-width">
+
+       
+        <style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc 
+            div{font-size:10px}</style>
+
+        <style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+        
+        
+
+        <title>Mapiary</title>
+        <link type="text/css" rel="stylesheet" href="{%static "css/css"%}">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+        <link rel="icon" type="image/png" href="{%static "Footage\Logo.png"%}">
+        <!-- Canonical SEO -->
+        <link rel="canonical" href="https://udn.com/news/story/6656/2494473">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="{%static "css/bootstrap.css"%}" rel="stylesheet">
+        <link href="{%static "css/rubick_pres.css"%}" rel="stylesheet">
+        <!--     Fonts and icons     -->
+        <link href="{%static "css/font-awesome.min.css"%}" rel="stylesheet">
+        <link href="{%static "css/css(1)"%}" rel="stylesheet" type="text/css">
+        <link href="{%static "css/pe-icon-7-stroke.css"%}" rel="stylesheet">
+        <link href="{%static "css/Rubik-Fonts.css"%}" rel="stylesheet">
+
+        <style>
+            .section-header .separator {
+                margin: 0em auto 2em;
+            }
+            .space-50{
+                height: 50px;
+                width: 100%;
+                display: block;
+                content: "";
+            }
+            .section .parallax > img{
+                width: 100%;
+                min-width: 0;
+                min-height: 0;
+            }
+            .pattern-image:after{
+                opacity: .2;
+/*                 background: #111; */
+            }
+            .section-header h1{
+                text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);font-family:sans-serif;
+            }
+            .section-header h5{
+                text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);font-family:sans-serif;
+            }
+            .section-header .content{
+                top: 42%;
+            }
+            .section-we-are-1 .title{
+                max-width: 960px;
+            }
+            .card .icon ~ h3{
+                margin-bottom: 10px;
+            }
+            .section-with-hover .project .content{
+                text-align: center;
+            }
+            .section-with-hover .project .over-area{
+                background: rgba(0, 0, 0, .83);
+            }
+            .section-clients-2{
+                padding: 6em 0 1em;
+            }
+            .section-clients-2 .nav-text li {
+                margin: 0 15px 10px 15px;
+            }
+            .section-contact-3 .contact-container .address-container{
+                width: 28%;
+                background-color: #FFFFFF;
+                height: 470px;
+                top: 50px;
+                padding: 20px;
+            }
+            .section-contact-3 .address{
+                margin-top: 40px;
+            }
+            .section-we-made-3 .content{
+                padding: 0 15px;
+                text-align: center;
+            }
+            .section-we-made-3 .over-area .content h3{
+                margin: 5px 0 20px;
+            }
+            .section-we-made-3 .over-area .content p{
+                font-size: .9em;
+                color: #898989;
+            }
+            .section-we-made-3 .over-area .content h5{
+                margin-bottom: 0px;
+                margin-top: 20px;
+            }
+
+            .btn-black{
+                letter-spacing: 1px;
+                margin-top: 20px;
+            }
+
+            .copyright a{
+                color: #FFFFFF;
+            }
+
+            .section-team-2 .team .member p {
+              font-size: .9em;
+              padding: 0 10px;
+            }
+
+            .card{
+                margin-bottom: 30px;
+            }
+            .section-with-hover .project .over-area.over-area-sm .content p {
+              font-size: .85em;
+            }
+            .section-with-hover .project .over-area.over-area-sm .content h4 {
+              font-size: 1.6em;
+            }
+            .logo{
+                display: block;
+                margin: 0 auto 10px;
+                width: 61px;
+                height: 61px;
+                border-radius: 50%;
+                border: 1px solid #333333;
+                overflow: hidden;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .loading .loading-container p {
+                font-size: 30px;
+                width: 220px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                height: 35px;
+            }
+            .loading .logo{
+                opacity: 0;
+                transition: all 0.9s;
+                -webkit-transition: all 0.9s;
+                -moz-transition: all 0.9s;
+            }
+            .loading .logo.visible{
+                opacity: 1;
+            }
+            .sharrre.btn{
+                color: #444444;
+                border-color: #444444;
+                font-weight: 400;
+            }
+            .address .col-md-6{
+                padding-right: 7px;
+                padding-left: 7px;
+            }
+            a.img-class{
+                opacity: 1;
+            }
+            a.img-class:hover{
+                opacity: .9;
+            }
+
+            .btn-lg{
+                padding: 14px 10px;
+            }
+
+            @media (max-width: 1200px){
+                .section-contact-3 .contact-container .address-container{
+                    height: 520px;
+                }
+            }
+
+
+            .tracking-in-expand {
+                -webkit-animation: tracking-in-expand 1.5s ease-in-out 0.2s both;
+            }
+            @-webkit-keyframes tracking-in-expand {
+                0% {letter-spacing: -0.5em; opacity: 0;}
+                40% {opacity: 0.6;}
+                100% {opacity: 1;}
+            }
+                           
+        </style>
+    <script async="" src="file://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="{% static "js/common.js.下載"%}"></script>
+    <script type="text/javascript" charset="UTF-8" src="{% static "js/map.js.下載"%}"></script>
+    <script type="text/javascript" charset="UTF-8" src="{% static "js/util.js.下載"%}"></script>
+    <script type="text/javascript" charset="UTF-8" src="{% static "js/marker.js.下載"%}"></script>
+    <style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }.gm-style img { max-width: none; }</style>
+
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/onion.js.下載"%}"></script>
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/controls.js.下載"%}"></script>
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/stats.js.下載"%}"></script>
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/common.js(1).下載"%}"></script>
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/util.js(1).下載"%}"></script>
+      <script type="text/javascript" charset="UTF-8" src="{% static "js/stats.js(1).下載"%}"></script></head>
+
+   <body class="no-touch">
+
+        <nav class="navbar navbar-default navbar-fixed-top navbar-burger" role="navigation">
+            <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                    </button>
+                    <a href="http://127.0.0.1:8000/map/" class="navbar-brand">
+                    Mapiary
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                        <li class="social-links">
+                            <a href="https://www.facebook.com/CreativeTim">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com/CreativeTim">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/+CreativetimPage">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a href="https://dribbble.com/creativetim">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#whoWeAre">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#mapiary">
+                            Mapiary
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#team">
+                            Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#contact">
+                            Contact
+                            </a>
+                        </li>
+                        </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        
+            
+                    
+            <div class="section section-contact-1" id="contact">
+                <div class="container">
+                    <div class="text-area">
+                        <div class="title add-animation">
+                            <h2>My Mapiary</h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <p>Here records your life.</p>
+                         {% for a in maps %}
+                         <p>published: {{ a.published_date }}</p>
+                         <p>{{ a.text|linebreaksbr}}</p>
+                         {% endfor %}
+                            
+					
+						
+					</div>
+					
+					
+					
+				</div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            
+
+            <footer class="footer footer-color-black">
+                <div class="container">
+                    <div class="copyright">
+                        2017 <a target="_blank" href="https://www.facebook.com/groups/350272491753399/?ref=ts&fref=ts"> Webpages Development
+                        </a>developed by team #13
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- end wrapper -->
+    
+    <!--   core js files    -->
+    <script async="" src="{% static "js/analytics.js.下載"%}"></script>
+    <script src="{% static "js/jquery-1.11.2.min.js.下載"%}" type="text/javascript"></script>
+    <script src="{% static "js/bootstrap.js.下載"%}" type="text/javascript"></script>
+    <!--   file for adding vertical points where we activate the elements animation   -->
+    <script type="text/javascript" src="{% static "js/jquery.waypoints.min.js.下載"%}"></script>
+    <!--  js library for devices recognition -->
+    <script type="text/javascript" src="{% static "js/modernizr.js.下載"%}"></script>
+    <!--  script for google maps   -->
+    <script type="text/javascript" src="{% static "js/js"%}"></script>
+    <!--   file where we handle all the script from the Rubik page   -->
+    <script type="text/javascript" src="{% static "js/rubick_pres.js.下載"%}"></script>
+
+    <script type="text/javascript" src="{% static "js/jquery.sharrre.js.下載"%}"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46172202-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+<div class="collapse navbar-collapse" style="min-height: 768px;"><ul class="nav navbar-nav">
+                        <li class="social-links">
+                            <a href="https://www.facebook.com/CreativeTim">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com/CreativeTim">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/+CreativetimPage">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a href="https://dribbble.com/creativetim">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#whoWeAre">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#Mapiary">
+                            Mapiary
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#team">
+                            Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#contact">
+                            Contact
+                            </a>
+                        </li>
+                    </ul></div><div class="collapse navbar-collapse" style="min-height: 768px;"><ul class="nav navbar-nav">
+                        <li class="social-links">
+                            <a href="https://www.facebook.com/CreativeTim">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com/CreativeTim">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/+CreativetimPage">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a href="https://dribbble.com/creativetim">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#whoWeAre">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#Mapiary">
+                            Mapiary
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#team">
+                            Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://presentation.creative-tim.com/" data-scroll="true" data-id="#contact">
+                            Contact
+                            </a>
+                        </li>
+                    </ul></div></body></html>
